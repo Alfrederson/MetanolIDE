@@ -1,0 +1,18 @@
+// Não tem monitor serial nesse editor ainda. Use a do arduino para ver.
+const  baud = 115200
+
+int vetor = [11, 13, 14, 10, 2, 99, 3]
+
+Serial.begin(baud)
+
+enquanto verdadeiro:
+  // quando uma array é declarada aqui dentro, é possível
+  // percorrer todos os seus valores dessa forma:
+  // note que não é possível modificar os valores da array dessa forma!
+  Serial.println("Numeros no vetor:")
+  para cada x de vetor:
+    Serial.println(x)
+    delay(50)
+  fim
+  delay(2000)
+fim

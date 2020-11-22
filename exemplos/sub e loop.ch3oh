@@ -1,0 +1,30 @@
+// Não tem monitor serial nesse editor ainda. Use a do arduino para ver.
+const  baud = 115200
+Serial.begin(baud)
+
+// equivale a void contagem (int primeiro, int ultimo)
+sub contagem primeiro, ultimo:
+  // o "for" é assim.
+  // ele é inclusivo e consegue contar de cima para baixo ou de baixo para
+  // cima, independente de qual dos dois for maior ou menor.
+  colunas = 0
+  para cada x de primeiro .. ultimo:
+    se x < 10: Serial.print(" ") fim // coloca mais um espaço para a formatação ficar ok
+    Serial.print(x)
+    Serial.print(" ")
+    colunas++
+    se colunas == 10:
+      colunas = 0
+      Serial.print("\n")
+    fim
+  fim
+fim
+
+enquanto verdadeiro:
+  Serial.print("\nVou contar de 1 a 30!\n")
+  contagem(1, 30)
+  delay(2000)
+  Serial.print("\nVou contar de 30 a 1!\n")
+  contagem(30, 1)
+  delay(2000)
+fim

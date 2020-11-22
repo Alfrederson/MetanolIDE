@@ -1,0 +1,27 @@
+// blink com pwm 
+// substituir led por algum pino com um led e PWM
+// como se pode ver, algumas propriedades da linguagem
+// permitem que a gente escreva um código bem conciso
+ 
+
+const modo    = pinMode,
+      pino    = digitalWrite,
+      estado  = digitalRead,
+      esperar = delay,
+      pwm     = analogWrite,
+      led     = 13
+
+modo(led,OUTPUT)
+
+// isso equivale a declarar duas variáveis com o tipo int
+
+poder = 0
+dir   = 1
+
+enquanto verdadeiro:
+  poder += dir
+  // muda o sinal de dir quando poder for 255 ou 0
+  se poder == 255 ou poder == 0 : dir *= -1 fim
+  pwm(led,poder)
+  esperar(1)
+fim
