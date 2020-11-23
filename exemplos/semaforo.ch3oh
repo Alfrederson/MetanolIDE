@@ -1,0 +1,25 @@
+// Deduza como funciona este algorítimo.
+
+// a linguagem aceita expressões de comparação no lado direito
+// declaração de função com uma única expressão é assim:
+func bool igual a,b => a==b
+
+pino leds = [
+  (10,OUTPUT,desligado),
+  (11,OUTPUT,desligado),
+  (12,OUTPUT,desligado)
+]
+
+int atual = 0
+loop:
+  delay(1000)
+
+  for each # indice,led of leds:
+    {led} = igual(indice,atual)
+    // outro jeito seria:
+    // {led} = indice == atual
+  end
+  
+  atual++
+  if atual == 3: atual = 0 end
+end

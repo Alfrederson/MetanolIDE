@@ -1,0 +1,18 @@
+// acende todos os leds por 2 segundos e desliga todos eles
+pino leds = [
+  (10,OUTPUT,ligado),
+  (11,OUTPUT,ligado),
+  (12,OUTPUT,ligado)
+]
+
+delay(2000)
+// # depois de "para cada" significa que eu vou querer alterar
+// o componente de algum vetor.
+// sem o #, não é possível alterar, anão ser que se use
+// para cada i,valor de vetor:
+// e o valor seja modificado assim:
+// vetor[i] = expressão
+
+para cada # indice, led de leds:
+  {led} = 0
+fim

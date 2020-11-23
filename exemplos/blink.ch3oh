@@ -1,4 +1,4 @@
-// bom e velho BLINK
+// BLINK no estilo antigo
 // const na verdade é uma espécie de macro
 const modo = pinMode,
       pino = digitalWrite,
@@ -6,9 +6,9 @@ const modo = pinMode,
       esperar = delay
 
 // ele permite definir alguma substituições, então isso é possível
-modo(13,OUTPUT)
+modo(12,OUTPUT)
 
 enquanto verdadeiro:
- pino(13,1-estado(13))
+ pino(12,1-estado(12))
  esperar(100)
 fim

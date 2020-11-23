@@ -2,14 +2,13 @@
 // substituir led por algum pino com um led e PWM
 // como se pode ver, algumas propriedades da linguagem
 // permitem que a gente escreva um código bem conciso
- 
 
 const modo    = pinMode,
       pino    = digitalWrite,
       estado  = digitalRead,
       esperar = delay,
       pwm     = analogWrite,
-      led     = 13
+      led     = 11
 
 modo(led,OUTPUT)
 

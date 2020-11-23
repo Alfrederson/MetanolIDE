@@ -1,0 +1,8 @@
+pino   led   = (12,OUTPUT,ligado)
+tictac blink = (1000)
+
+enquanto verdadeiro:
+  se blink.tic():
+    led = 1-led
+  fim
+fim
