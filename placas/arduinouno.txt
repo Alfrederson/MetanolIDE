@@ -1,0 +1,5 @@
+nome=Arduino Uno,
+fqbn=arduino:avr:uno,
+chip=atmega328p,
+upload_tool=arduino,
+upload_baud=115200

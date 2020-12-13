@@ -1,0 +1,5 @@
+nome=Arduino Mega,
+fqbn=arduino:avr:mega,
+chip=atmega2560,
+upload_tool=wiring,
+upload_baud=115200

@@ -1,0 +1,5 @@
+nome=Arduino Nano (57600),
+fqbn=arduino:avr:nano,
+chip=atmega328p,
+upload_tool=arduino,
+upload_baud=57600
