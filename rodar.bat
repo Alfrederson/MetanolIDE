@@ -1,1 +1,1 @@
-javaw -jar app.jar
+java -jar app.jar
